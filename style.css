@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --background-image: linear-gradient( 83.2deg,
+    rgb(150, 93, 233) 15.8%,
+    rgba(99, 88, 238, 1) 80.3%
+  );
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+
+h2 {
+  color: var(--dark);
+  font-family: "Comfortaa", cursive;
+  font-size: bold;
+  padding: 1rem;
+  margin: 0;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-buttons {
+  color: var(--dark);
+  width: 13rem;
+  height: 4rem;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 5%;
+  left: 75%;
+  padding: 10px;
+}
+
+.theme-btn {
+  width: 2rem;
+  height: 2rem;
+  background-image: var(--background-image);
+  color: var(--dark);
+  font-size: 30px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+
+.dark {
+  font-size: 25px;
+}
+
+.light:hover,
+.dark:hover {
+  scale: 1.25;
+}
+
+.panel {
+  background-image: var(--background-image);
+  color: var(--white);
+  width: 50rem;
+  height: auto;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1rem 2.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 8px 8px 3px rgb(85, 85, 85);
+}
+
+.search-bar {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  width: 40rem;
+  font-weight: 700;
+  height: 2.5rem;
+  padding: 0px 1rem;
+  font-size: 28px;
+  margin: 5px 10px;
+  border-radius: 25px;
+}
+
+.search-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--white);
+  color: var(--dark);
+  font-size: 25px;
+  padding: 2px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  opacity: 0.8;
+}
+
+.search-btn:hover {
+  scale: 1.15;
+  opacity: 1;
+}
+
+.display {
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
+  height: auto;
+  width: auto;
+  min-width: 35rem;
+  padding: 5px;
+  margin: 2rem 8rem 1px 5rem;
+  border-radius: 10px;
+  border-left: 7px solid rgb(17, 0, 255);
+}
+
+.meanings{
+  font-size: 30px;
+  padding: 5px 1px 2px 1rem;
+}
+
+.definitions{
+  font-size: 25px;
+  padding: 10px 1px 5px 1rem;
+}
+
+.meanings::first-letter,
+.definitions::first-letter{
+  text-transform: capitalize;
+}
